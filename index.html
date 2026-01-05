@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neel's CA Inter Exam Schedule - Jan 2026</title>
+    <title>Aisha's Final Sem Exams</title>
     <style>
         * {
             margin: 0;
@@ -226,8 +226,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>Neel's CA Inter Exams</h1>
-            <p class="subtitle">January 2026 Attempt - You've Got This!</p>
+            <h1>Aisha's Final Sem Exams</h1>
+            <p class="subtitle">April 2026 - You've Got This!</p>
         </header>
 
         <div class="countdown-main">
@@ -237,17 +237,17 @@
         </div>
 
         <div class="exams-list">
-            <div class="exam-card accounts" data-date="2026-01-06" onclick="toggleComplete(this)">
+            <div class="exam-card accounts" data-date="2026-04-26" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 Tuesday, 6th January 2026</div>
+                    <div class="exam-date">📅 Tuesday, 26th April 2026</div>
                     <div class="exam-name">Accounting</div>
-                    <div class="exam-countdown" data-date="2026-01-06"></div>
+                    <div class="exam-countdown" data-date="2026-04-26"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-01-06">--</div>
+                    <div class="days-left" data-date="2026-04-26">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
@@ -323,17 +323,17 @@
 
         <div class="motivation">
             <span>"Success is not final, failure is not fatal: it is the courage to continue that counts."</span>
-            <p style="margin-top: 15px;">All the best, Neel! 🌟</p>
+            <p style="margin-top: 15px;">All the best, Aisha! 🌟</p>
         </div>
 
         <footer>
-            <p>Click on an exam card to mark as completed | Made with ❤️ for Neel</p>
+            <p>Click on an exam card to mark as completed</p>
         </footer>
     </div>
 
     <script>
         const exams = [
-            { date: '2026-01-06', name: 'Accounting' },
+            { date: '2026-04-26', name: 'Accounting' },
             { date: '2026-01-08', name: 'Corporate & Other Laws' },
             { date: '2026-01-10', name: 'Taxation' },
             { date: '2026-01-17', name: 'FM & SM' },
@@ -344,7 +344,7 @@
             const now = new Date();
 
             document.querySelectorAll('.days-left[data-date]').forEach(el => {
-                const examDate = new Date(el.dataset.date + 'T14:00:00');
+                const examDate = new Date(el.dataset.date + 'T16:00:00');
                 const diff = examDate - now;
                 const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
@@ -360,7 +360,7 @@
             });
 
             document.querySelectorAll('.exam-countdown[data-date]').forEach(el => {
-                const examDate = new Date(el.dataset.date + 'T14:00:00');
+                const examDate = new Date(el.dataset.date + 'T16:00:00');
                 const diff = examDate - now;
 
                 if (diff < 0) {
@@ -376,7 +376,7 @@
             // Update next exam countdown
             let nextExam = null;
             for (let exam of exams) {
-                const examDate = new Date(exam.date + 'T14:00:00');
+                const examDate = new Date(exam.date + 'T16:00:00');
                 if (examDate > now) {
                     nextExam = exam;
                     break;
@@ -387,7 +387,7 @@
             const nextName = document.getElementById('next-exam-name');
 
             if (nextExam) {
-                const examDate = new Date(nextExam.date + 'T14:00:00');
+                const examDate = new Date(nextExam.date + 'T16:00:00');
                 const diff = examDate - now;
                 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
